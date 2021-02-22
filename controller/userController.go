@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"hw/dal"
 	models "hw/models"
 	"net/http"
 	"strconv"
@@ -18,6 +19,7 @@ func init() {
 
 //HttpGet user
 func GetUserAction(c *gin.Context) {
+	dal.Gets()
 	c.JSON(http.StatusOK, users)
 }
 

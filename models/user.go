@@ -9,8 +9,8 @@ import (
 
 // User is a struct
 type User struct {
-	ID   int    `json:"id"`
-	Name string `json:"name"`
+	ID   int    `json:"id" binding:"required"`
+	Name string `json:"name" binding:"required"`
 }
 
 var (
